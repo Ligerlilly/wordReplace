@@ -5,15 +5,26 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='js/findReplace.js'></script>
+    <script src='js/main.js'></script>
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <div class='container'>
+      <h1>Find and Replace</h1>
       <form id="findReplace">
         <div class='form-group'>
-          <input type="text" id='replace' placeholder='Enter text' class='form-control'>
+          <label for="phrase">Enter phrase:</label>
+          <input type="text" id='phrase' placeholder='Enter phrase' class='form-control'>
+          <label for="toBeReplaced">Enter word to be replaced:</label>
+          <input type="text" id='toBeReplaced' placeholder='Enter word to be replaced' class='form-control'>
+          <label for="replacement">Enter replacement word:</label>
+          <input type="text" id='replacement' placeholder='Enter replacement word' class='form-control'>
+
         </div>
         <button type='submit' class='btn'>Submit</button>
       </form>
+      <h2 class='result'></h2>
     </div>
   </body>
 </html>

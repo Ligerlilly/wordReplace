@@ -1,5 +1,17 @@
-var findReplace = function() {
-  return false;
+var findReplace = function(phrase, toBeReplaced, replacement) {
+  var words = [];
+  words = phrase.split(' ');
+  for (index in words) {
+    if (words[index] === toBeReplaced) {
+      words[index] = replacement;
+    }
+  }
+
+  if (words.join(' ') === phrase) {
+    return 'no match';
+  }
+  
+  return words.join(" ");
 };
 
 module.exports = findReplace;
