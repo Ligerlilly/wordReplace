@@ -6,7 +6,7 @@
 
 *About This App*
 ~~~~
-User enters a phrase a word to be replaced and a replacement word, and after
+A user enters a phrase, a word to be replaced, and a replacement word. After
 hitting submit a new phrase is displayed with proper replacement
 ~~~~
 
