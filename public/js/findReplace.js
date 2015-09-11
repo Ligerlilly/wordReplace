@@ -2,7 +2,7 @@ var findReplace = function(phrase, toBeReplaced, replacement) {
   var words = [];
   words = phrase.split(' ');
   for (index in words) {
-    if (words[index] === toBeReplaced) {
+    if (words[index].toLowerCase() === toBeReplaced.toLowerCase()) {
       words[index] = replacement;
     }
   }
@@ -10,7 +10,7 @@ var findReplace = function(phrase, toBeReplaced, replacement) {
   if (words.join(' ') === phrase) {
     return 'no match';
   }
-  
+
   return words.join(" ");
 };
 

@@ -13,4 +13,9 @@ describe('FindReplace', function() {
   it('should return no match if there is no match', function() {
     expect(findReplace('try this', 'haha', 'noway')).to.eq('no match')
   });
+
+  it('should be case insensitive', function() {
+    expect(findReplace('try tHis', 'this', 'that')).to.eq('try that')
+  });
+
 });
