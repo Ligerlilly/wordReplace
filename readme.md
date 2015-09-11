@@ -6,12 +6,14 @@
 
 *About This App*
 ~~~~
-User enters a phrase a word to be replaced and a replacement word, and after hitting submit a new phrase is displayed with proper replacement
+User enters a phrase a word to be replaced and a replacement word, and after
+hitting submit a new phrase is displayed with proper replacement
 ~~~~
 
 **How to use this app**
 
 git clone from `https://github.com/Ligerlilly/wordReplace`
+cd into dir wordReplace
 install the node modules using <code>npm install</code>
 run tests using <code>npm test</code>
 start the local server with the command <code>node app.js</code>
